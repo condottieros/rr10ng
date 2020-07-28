@@ -1,0 +1,624 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 60px;
+    width: 100%;
+    z-index: 50;
+}
+
+.header img {
+    position: absolute;
+    height: 60px;
+}
+
+.header .device-name {
+    position: absolute;
+    left: 250px;
+    margin: 10px;
+    color: #333;
+    font-weight:bold;
+    font-size: 30px;
+    text-align: left;
+}
+
+.header-authorization img{
+    position: absolute;
+    height: 50px;
+    margin-left: 20px;
+}
+.device-name {
+    color: #333;
+    font-weight:bold;
+    font-size: 32px;
+    text-align: center;
+    margin-top: 90px;
+}
+
+#wrap {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -30px;
+    padding: 60px 0;
+}
+
+.footer {
+    min-height: 30px;
+    text-align: right;
+    font-style: italic;
+    font-size: 12px;
+    background-color: #eee;
+    border-top: 1px solid #ddd;
+}
+
+.footer .copyright {
+    padding: 5px 15px;
+    float: left;
+}
+
+.footer .version {
+    padding: 5px 15px;
+    float: right;
+}
+.footer .version a {
+    color: inherit;
+}
+
+.menu .navbar-right {
+    margin: 8px;
+}
+
+.menu .dropdown-menu {
+    min-width: 20px;
+}
+
+a.logout-link {
+    color: #333;
+}
+.menu .navbar-default .navbar-nav > li > button.exclamation-link {
+    display: inline;
+    padding: 0;
+    margin: 0;
+    border: none;
+    background: none;
+}
+
+.left-menu {
+    position: absolute;
+    width: 250px;
+    text-align: right;
+    min-height: 260px;
+    border-right: 1px solid #eee;
+    box-shadow: 7px 0px 5px -5px #ddd;
+}
+.left-menu ul.nav > li.active > a {
+    color: #555;
+}
+.left-menu ul.nav > li > a:focus,
+.left-menu ul.nav > li > a:hover,
+.left-menu ul.nav > li.active > a:focus,
+.left-menu ul.nav > li.active > a:hover {
+    /*text-decoration: none;*/
+    background: none;
+    color: black;
+}
+
+.modules {
+    padding-left: 270px;
+    min-height: 300px;
+}
+
+.pointer-cursor {
+    cursor: pointer;
+}
+
+.clickable-cell {
+    cursor: pointer;
+    color: #08C;
+}
+
+.clickable-cell:hover {
+    color: #005580;
+    text-decoration: underline;
+}
+
+.table-no-hover tbody tr:hover td,
+.table-no-hover tbody tr:hover th {
+    background-color: white;
+}
+
+.table-left-bordered {
+    border-left: 1px solid #dddddd;
+}
+
+.table {
+    margin-top: 20px;
+}
+
+.control-label {
+    text-align: right;
+}
+
+.tile-control-legend {
+    padding-left: 10px;
+    margin-bottom: 6px;
+    font-size: 14.5px;
+    font-weight: bold;
+}
+
+a, a:focus, a:hover { /* fix for ff - remove dotted border around links */
+    outline: none;
+}
+
+div.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,.2);
+    z-index: 100;
+    overflow: hidden;
+    text-align: center;
+}
+div.overlay:before {
+    content: '';
+    width: 0px;
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+input[disabled], select[disabled], textarea[disabled], input[readonly], select[readonly], textarea[readonly] {
+    opacity: 0.5;
+}
+
+input[type="range"] {
+    cursor: pointer;
+}
+
+.btn-download {
+    margin-top: 5px;
+}
+
+.clearfix{
+    clear: both;
+}
+
+.need-reboot-message-panel {
+    width: 650px;
+    background: white;
+    box-shadow: 1px 1px 5px 0px black;
+}
+.reboot-panel {
+    width: 550px;
+}
+.modal-panel {
+    z-index: 11;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+}
+
+.message-danger {
+    color: #a94442;
+    font-style: italic;
+}
+.panel-buttons {
+    margin-top: 20px;
+}
+
+a.disabled {
+    color: gray;
+    pointer-events: none;
+}
+
+.checkbox-label {
+    min-height: 20px;
+    padding-left: 20px;
+    margin-bottom: 0;
+}
+.inline-checkbox {
+    display: inline-block;
+    width: 15px;
+}
+.inline-checkbox input[type="checkbox"] {
+    margin-top: -10px;
+    display: block;
+    position: absolute;
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+.progress-bar-percent {
+    height: 0;
+    text-align: center;
+}
+.progress-bar-percent span {
+    color: white;
+    text-shadow: 2px  2px 2px #23567F,
+    -2px  2px 2px #23567F,
+    2px -2px 2px #23567F,
+    -2px -2px 2px #23567F;
+}
+
+label.out {
+    display: block;
+}
+
+input[type=password][readonly].eye-pass,
+input[type=text][readonly].eye-pass {
+    opacity: 1;
+    background-color: #fff;
+    cursor: text;
+}
+
+.modal-dialog-centered {
+    top: 23%;
+}
+
+/* -------- error highlighting from bootstrap 2: -------- */
+input:focus:invalid:focus, textarea:focus:invalid:focus, select:focus:invalid:focus {
+    border-color: #843534;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 6px #ce8483;
+    -moz-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 6px #ce8483;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 6px #ce8483;
+}
+input:invalid, textarea:invalid, select:invalid {
+    color: #a94442;
+    border-color: #a94442;
+}
+
+/* -------- bootstrap fix: -------- */
+.modules label {
+    font-weight: normal;
+}
+.modules legend {
+    font-size: 18px;
+    margin: 10px 0 8px 0;
+}
+.modules .form-group {
+    margin-bottom: 0px;
+}
+.modules .form-group select{
+    padding-left: 8px;
+}
+.modules .form-group form-control select{
+    padding-left: 8px;
+}
+.col-sm-offset-2.col-sm-10.form-actions { /* for buttons at the end of page */
+    margin-top: 20px;
+}
+.popover-content {
+    min-width: 200px;
+}
+.collapsed .icon-arrow-down
+{
+    display: none;
+}
+
+.icon-arrow-down
+{
+    display: inline-block;
+}
+
+.collapsed .icon-arrow-up
+{
+    display: inline-block;
+}
+
+.icon-arrow-up
+{
+    display: none;
+}
+
+.collapse .icon-arrow-up {
+    display: inline-block;
+}
+
+.scan-panel {
+    margin-bottom: 20px;
+}
+
+.scan-panel .btn {
+    margin-top: -6px;
+}
+.form-group .input-group .input-group-btn button.btn-transparent {
+    border: transparent;
+    background: transparent;
+    outline: none;
+    box-shadow: none;
+}
+.form-group .input-group .input-group-btn button.dropdown-toggle {
+    margin-left: -25px;
+    z-index: 3;
+}
+
+.help-outer {
+    position: absolute;
+    text-align: right;
+    top: 120px;
+    min-height: 48px;
+    right: 15px;
+    min-width: 52px;
+    width: auto;
+    padding: 0;
+    overflow: hidden;
+    transition: all 50ms;
+}
+
+.help-outer.opened {
+    width: 35%;
+    transition: all 50ms;
+    bottom: 40px;
+    z-index: 9;    
+}
+
+.help-outer .help-content {
+    padding: 3px 15px;
+    top: 0;
+    max-height: 100%;
+    width: 100%;
+    border-radius: 6px;
+    border-left: 0 solid #eee;
+    background-color: #e8e8e8;
+    overflow: hidden;
+    transition: all 50ms;
+}
+.help-outer.opened .help-content {
+    border-radius: 6px;
+    overflow-y: auto;
+    transition: all 50ms;
+}
+
+.help-outer button {
+    position: absolute;
+    right: 0;
+    z-index: 1;
+}
+
+.help-outer .btn-link:hover,
+.help-outer .btn-link:focus{
+    text-decoration: none;
+}
+
+.help {
+    width: 100%;
+    text-align: left;
+    overflow-x: auto;
+    padding: 16px 6px 10px;
+    transition: all 50ms;
+}
+
+.opened .help {
+    margin-left: 0;
+    transition: all 50ms;
+}
+
+.help dl {
+    margin-bottom: 9px;
+}
+.help dt {
+    margin-top: 9px;
+}
+.help dd {
+    margin-left: 15px;
+}
+
+.input-group-addon .btn {
+    border:none;
+    padding:6px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.input-group-addon .btn-default:active:focus,
+.input-group-addon .btn-default:active:hover,
+.input-group-addon.open > .dropdown-toggle.btn-default:focus,
+.input-group-addon.open > .dropdown-toggle.btn-default:hover {
+    background-color: #e6e6e6;
+}
+.stepwizard-step p {
+    margin-top: 0px;
+    color:#666;
+}
+.stepwizard-row {
+    display: flex;
+}
+.stepwizard {
+    display: table;
+    width: 100%;
+    position: relative;
+}
+.stepwizard-step button[disabled] {
+    opacity: 1 !important;
+    filter: alpha(opacity=100) !important;
+}
+.stepwizard .btn.disabled, .stepwizard .btn[disabled], .stepwizard fieldset[disabled] .btn {
+    opacity:1 !important;
+    color:#bbb;
+}
+.stepwizard-row:before {
+    top: 14px;
+    bottom: 0;
+    position: absolute;
+    content:" ";
+    width: 100%;
+    height: 1px;
+    background-color: #ccc;
+    z-index: 0;
+}
+.stepwizard-step {
+    display: table-cell;
+    text-align: center;
+    position: relative;
+    margin-bottom: 10%;
+}
+.btn-circle {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    padding: 4px 0 !important;
+    font-size: 12px;
+    line-height: 1.428571429;
+    border-radius: 50% !important;
+    cursor: pointer !important;
+}
+tr.overlay {
+    color: #999797;
+}
+
+html, body, .header {
+    min-width: 320px;
+}
+
+.hr-h-20 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.mx-w-650 {
+    max-width: 650px;
+}
+
+table.table > tbody > tr > td {
+    border-top-color: #b1d1d1;
+}
+
+table.table .valign-mid > th,
+table.table .valign-mid > td {
+    vertical-align: middle;
+}
+
+.wifi-icon {
+    width: 25px;
+    margin-right: 5px;
+}
+.btn-link.help-btn,
+.btn-link.help-btn:focus,
+.btn-link.help-btn:hover,
+.btn-link.help-btn:active {
+    text-decoration: none;
+}
+.btn.wireless-scanner-button {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.radio-ranges {
+    margin-top: -3px;
+    margin-bottom: 10px;
+}
+.radio-ranges>label:not(:first-child) {
+    margin-left: 8px;
+}
+
+@media (min-width: 768px) {
+    .mobile-only {
+        display: none !important;
+    }
+
+    .menu .navbar .container-fluid .navbar-collapse, .menu .navbar .container-fluid {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .fullscreen-only {
+        display: none !important;
+    }
+
+    /* HEADER */
+    #wrap {
+        padding-top: 50px;
+    }
+
+    .header img {
+        height: 50px;
+    }
+
+    .header .device-name {
+        margin: 3px;
+        left: unset;
+        right: 30px;
+    }
+
+    /* NAVIGATION */
+
+    .mobile-only.nav.navbar-nav li {
+        display: inline;
+    }
+
+    .mobile-only.nav.navbar-nav li a {
+        display: unset;
+        height: 30px;
+        margin: 8px 10px;
+    }
+
+    .left-menu {
+        position: relative;
+    }
+
+    .navbar, .left-menu {
+        padding: 0 20px;
+    }
+
+    .left-menu {
+        width: 100%;
+        text-align: left;
+        min-height: auto;
+        border: none;
+        box-shadow: none;
+        margin-bottom: 20px;
+        background-color: #f8f8f8;
+        border-color: #e7e7e7;
+        margin-top: -20px;
+    }
+
+    .mobile-control {
+        margin-top: 8px;
+        margin-left: 9px;
+        float: left;
+    }
+
+    /* CONTENT */
+
+    .modules {
+        padding-left: 0;
+    }
+
+    /* FOOTER */
+
+    .copyright, .version {
+        width: 100%;
+        float: none;
+        text-align: center;
+    }
+
+    .reboot-panel {
+        width: 80%;
+        min-width: 256px;
+    }
+    .help-outer.opened {
+        width: 65%;
+    }
+}
+@media (max-width: 540px) {
+    .help-outer.opened {
+        width: 95%;
+    }
+}
