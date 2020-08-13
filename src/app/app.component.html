@@ -1,54 +1,8 @@
 <h2>test</h2>
 <div>
-    <div class="form-horizontal">
-        <!-- ko foreach: validation.common -->
-        <div class="alert alert-danger" role="alert" data-bind="restext: $data"></div>
-        <!-- /ko -->
-    
-        <div class="form-group" data-bind="css: {'has-error': validation['mib.user.name']}">
-            <label class="col-sm-3 control-label" data-bind="restext: 'Username'" for="system-account-username"></label>
-            <div class="col-sm-4">
-                <input class="form-control" type="text" data-bind="value: data.mib.user.name, koFocus: focus['mib.user.name']" id="system-account-username">
-            </div>
-            <div class="col-sm-9 col-sm-offset-3">
-                <span class="help-block" data-bind="restext: validation['mib.user.name']"></span>
-            </div>
-        </div>
-        <div class="form-group" data-bind="css: {'has-error': validation['mib.user.password']}">
-            <label class="col-sm-3 control-label" data-bind="restext: 'Password'" for="system-account-password"></label>
-            <div class="col-sm-4">
-                <input -password  params="value: data.mib.user.password, koFocus: focus['mib.user.password'], id: 'system-account-password'">
-                <!--/input-password-->
-            </div>
-            <div class="col-sm-9 col-sm-offset-3">
-                <span class="help-block" data-bind="restext: validation['mib.user.password']"></span>
-            </div>
-        </div>
-        <div class="form-group" data-bind="css: {'has-error': validation['mib.user.confirm']}">
-            <label class="col-sm-3 control-label" data-bind="restext: 'ConfirmPassword'" for="system-password-confirm"></label>
-            <div class="col-sm-4">
-                <input -password   params="value: data.mib.user.confirm, koFocus: focus['mib.user.confirm'], id: 'system-password-confirm'">
-                <!--/input-password -->
-            </div>
-            <div class="col-sm-9 col-sm-offset-3">
-                <span class="help-block" data-bind="restext: validation['mib.user.confirm']"></span>
-            </div>
-        </div>
-    </div>
-    
-    <div class="form-horizontal">
-        <div class="form-group">
-            <div class="col-sm-offset-2 col-sm-10 form-actions">
-                <button class="btn btn-primary" data-bind="click: apply, enable: canApplyCancel()">
-                    <span class="wbz" data-bind="css: canApplyCancel() ? 'wbz-check' : 'wbz-spinner wbz-pulse'" aria-hidden="true"></span>
-                    <span data-bind="restext: 'Apply'"></span>
-                </button>
-                <button class="btn btn-default" data-bind="click: cancel, enable: canApplyCancel()">
-                    <span class="wbz wbz-cross" aria-hidden="true"></span>
-                    <span data-bind="restext: 'Cancel'"></span>
-                </button>
-            </div>
-        </div>
-    </div>
+   <router-outlet></router-outlet>
     
 </div>
+<p>
+   <a routerLink="/sddfg">aaaa</a>
+</p>

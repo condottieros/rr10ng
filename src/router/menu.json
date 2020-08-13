@@ -1,0 +1,79 @@
+[
+    {
+        "title": "Wizard",
+        "hidden": "IsDeviceConfigured",
+        "subitems": [
+            {
+                "title": "Wizard",
+                "path": "#wizard"
+            }
+        ]
+    },
+    {
+        "title": "Status",
+        "subitems": [
+            {
+                "title": "NetworkMap",
+                "path": "#status/status"
+            },
+            {
+                "title": "AboutDevice",
+                "path": "#status/about"
+            },
+            {
+                "title": "Monitoring",
+                "path": "#status/monitoring"
+            }
+        ]
+    },
+    {
+        "title": "Wi-Fi",
+        "subitems": [
+            {
+                "title": "NetworkConnection",
+                "path": "#wifi/connection"
+            },
+            {
+                "title": "AdvancedNetworkSettings",
+                "path": "#wifi/advanced"
+            }
+        ],
+        "hidden": "EasyMeshEnabled"
+    },
+    {
+        "title": "EasyMesh",
+        "subitems": [
+            {
+                "title": "GeneralSettings",
+                "path": "#easy-mesh/general"
+            }
+        ],
+        "hidden": "EasyMeshDisabled"
+    },
+    {
+        "title": "Network",
+        "subitems": [
+            {
+                "title": "Network",
+                "path": "#network/network"
+            }
+        ]
+    },
+    {
+        "title": "System",
+        "subitems": [
+            {
+                "title": "AdminAccount",
+                "path": "#system/account"
+            },
+            {
+                "title": "FirmwareUpgrade",
+                "path": "#system/fw-upgrade"
+            },
+            {
+                "title": "Configuration",
+                "path": "#system/configuration"
+            }
+        ]
+    }
+]
